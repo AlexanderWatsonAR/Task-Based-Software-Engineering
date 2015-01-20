@@ -11,6 +11,15 @@ namespace Anagrams
     {
         static void Main(string[] args)
         {
+            ReadFile();
+        }
+        private static void ReadFile()
+        {
+            String[] file = File.ReadAllLines("wordlist.txt");
+            foreach (String s in file)
+            {
+                Console.WriteLine(s);
+            }
         }
     }
 }
